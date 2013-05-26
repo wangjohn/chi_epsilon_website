@@ -16,7 +16,7 @@
         <%= link_to "Chi Epsilon", home_index_path, class: "brand" %>
         <ul class="nav">
           <li>
-          <a href="/www//roster">Members</a>
+            <%= link_to "Members", members_index_path %>
           </li>
           <li>
           <a href="constitution.pdf">Constitution</a>
@@ -24,6 +24,17 @@
           <li>
           <a href="/www//contact">Contact Us</a>
           </li>
+        </ul>
+        <ul class="nav pull-right ">
+          <% if user_signed_in? %>
+            <li>
+              <%= link_to "Logout of #{current_user.first_name}", destroy_user_session_path, method: :delete %>
+            </li>
+          <% else %>
+            <li>
+              <%= link_to "Login", new_user_session_path %>
+            </li>
+          <% end %>
         </ul>
       </div>
     </div>
