@@ -30,6 +30,10 @@ div.field, div.actions {
   display: table;
 }
 
+form.button_to {
+  margin: 0;
+}
+
 #error_explanation {
   width: 450px;
   border: 2px solid red;

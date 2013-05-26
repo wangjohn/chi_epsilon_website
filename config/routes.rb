@@ -1,10 +1,7 @@
 Www::Application.routes.draw do
   get "members/index"
-
   get "members/show"
-
   get "members/edit"
-
   get "members/destroy"
 
   resources :photos
