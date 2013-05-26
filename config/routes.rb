@@ -1,4 +1,6 @@
 Www::Application.routes.draw do
+  resources :photos
+
   get "home/index"
 
   devise_for :users

@@ -7,6 +7,7 @@ gem 'rails', '3.0.11'
 
 gem 'mysql2', '~> 0.2.17'
 gem 'devise'
+gem 'paperclip'
 
 # Use unicorn as the web server
 # gem 'unicorn'
