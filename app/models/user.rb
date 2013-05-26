@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
     :first_name, :last_name, :biography
 
   belongs_to :position
+  has_many :blog_posts
 
   validates_presence_of :first_name, :last_name
 end
