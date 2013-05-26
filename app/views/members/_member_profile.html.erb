@@ -1,0 +1,15 @@
+<%# locals: member %>
+
+<div class="member_profile">
+  <div class="name">
+    <%= member.first_name -%> <%= member.last_name %>
+  </div>
+  <div class="biography">
+    <div class="label">
+      Biography
+    </div>
+    <div class="content">
+      <%= member.biography %>
+    </div>
+  </div>
+</div>

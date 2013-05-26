@@ -1,3 +1,5 @@
+<h1>Members of Chi Epsilon</h1>
+
 <% @members.each do |member| %>
-  <div class="name"><%= member.first_name %> <%= member.last_name %></div>
+  <%= render partial: "member_profile", locals: { member: member } %>
 <% end %>
