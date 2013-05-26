@@ -1,4 +1,6 @@
 Www::Application.routes.draw do
+  resources :events
+
   get "members/index"
   get "members/show"
   get "members/edit"
