@@ -30,8 +30,13 @@ GEM
     activesupport (3.0.11)
       bigdecimal
     arel (2.0.9)
+    bcrypt-ruby (3.0.1)
     bigdecimal (1.1.0)
     builder (2.1.2)
+    devise (1.5.4)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.0.3)
+      warden (~> 1.1)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     fcgi (0.8.8)
@@ -44,6 +49,7 @@ GEM
     mime-types (1.16)
     minitest (2.10.1)
     mysql2 (0.2.17)
+    orm_adapter (0.0.7)
     polyglot (0.3.1)
     rack (1.4.0)
     rack-mount (0.7.1)
@@ -74,11 +80,14 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.33)
+    warden (1.2.1)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  devise
   fcgi
   minitest
   mysql2 (~> 0.2.17)
